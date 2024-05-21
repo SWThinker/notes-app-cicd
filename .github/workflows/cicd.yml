@@ -1,4 +1,4 @@
-name: Publish Docker Image to Amazon ECR and deploy to AEKR
+name: Publish Docker Image to Amazon ECR and deploy to EKR
 
 on:
   push:
