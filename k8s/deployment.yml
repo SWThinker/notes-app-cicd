@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: notes-app-deployment
+  name: notes-app-deployment-eela
   labels:
-    app: notes-app
+    app: notes-app-eela
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: notes-app
+      app: notes-app-eela
   template:
     metadata:
       labels:
-        app: notes-app
+        app: notes-app-eela
     spec:
       containers:
-      - name: notes-app
+      - name: notes-app-eela
         image: 471112967512.dkr.ecr.us-east-1.amazonaws.com/notes-app-eela:latest
         resources:
           requests:
